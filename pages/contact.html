@@ -8,15 +8,123 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="./assets/_images/logo/Untitled design.png" type="image/x-icon">
     <title>Contact Us</title>
 </head>
-<body>
-    <header class="flex flex-col justify-center bg-[url(../assets/_images/hero2.png)] h-[30vh] bg-center text-white px-60">
-        <h1 class="font-semibold text-4xl">PROJECTS & ACHIEVEMENTS</h1>
-        <div class="flex mt-2">
-            <a href="../index.html">Home ></a>
-            <p>Contacts</p>
-        </div>
-    </header>
+<body class="font-[Montserrat] box-border">
+    <div class="grid">
+        <header class="flex flex-col justify-center bg-[url(../assets/_images/hero2.png)] h-[30vh] bg-center text-white px-60">
+            <h1 class="font-semibold text-4xl">PROJECTS & ACHIEVEMENTS</h1>
+            <div class="flex mt-2">
+                <a href="../index.html" class="hover:underline">Home</a>
+                <p>> Contacts</p>
+            </div>
+        </header>
+
+        <main class="bg-black/20">
+            <div class="flex justify-center items-center relative w-full h-[70vh]">
+                <!-- Video Background -->
+                <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+                  <source src="../assets/_images/video/4K Forest - Cinematic Forest - 4K Nature Video Ultra HD (1).mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+            
+                <div class="absolute flex justify-between items-center rounded-3xl bg-white/50 backdrop-blur-md h-[80%] w-[50%]">
+                    <div class="flex flex-col items-center px-10">
+                        <h1 class="font-semibold text-4xl text-green-500 mb-10">Environmental Care</h1>
+
+                        <ul class="flex flex-col gap-2 text-green-200 text-xl">
+                            <li><i class="fa-solid fa-map-location-dot mr-5"></i>Somewhere, Outhere, Earth</li>
+                            <li><i class="fa-solid fa-phone mr-5"></i> +63 *** *** ****</li>
+                            <li><i class="fa-solid fa-envelope mr-5"></i>jerrehsalera77@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <section class="w-[30rem] max-h-[40rem] px-10">
+                        <h2 class="text-2xl font-semibold text-center text-green-300 mb-6">Contact Us</h2>
+                        
+                        <form action="#" method="POST">
+                            <div class="mb-4">
+                                <label for="name" class="block text-green-400 font-medium mb-2">Full Name</label>
+                                <div class="flex gap-5">
+                                    <input type="text" id="name" name="name" placeholder="First Name" class="w-full px-4 py-2 border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+                                    <input type="text" id="name" name="name" placeholder="Last Name" class="w-full px-4 py-2 border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-green-400 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" class="w-full px-4 py-2 border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="block text-green-400 font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-2 border border-white rounded-md max-h-[10rem] min-h-10 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="w-full py-2 px-4 bg-green-600 text-white font-semibold rounded-md active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                                Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </section>
+                </div>    
+            </div> 
+        </main>
+
+        <footer class="grid grid-rows-[1fr_100px] items-center justify-center h-[70vh] bg-linear-to-r from-green-500 via-green-400 to-green-500 text-white px-50">
+            <div class="flex">
+                <div class="flex flex-col pr-60">
+                    <h1 class="text-4xl font-semibold">Environmental Care</h1>
+                    <p class="mt-10 text-xl">"The automated process starts as soon as your clothes go into the machine."</p>
+                    <div class="flex gap-10 mt-10">
+                        <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="flex gap-30">
+                    <div class="flex flex-col w-[15rem]">
+                        <h1 class="font-semibold text-3xl">Our Solutions</h1>
+
+                        <ul class="text-lg mt-5">
+                            <li class="hover:underline">Design & Creatives</li>
+                            <li class="hover:underline">Telecommunication</li>
+                            <li class="hover:underline">Restaurant</li>
+                            <li class="hover:underline">Programming</li>
+                            <li class="hover:underline">Architecture</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col w-[15rem]">
+                        <h1 class="font-semibold text-3xl">Company</h1>
+
+                        <ul class="text-lg mt-5">
+                            <li class="hover:underline">About</li>
+                            <li class="hover:underline">Review</li>
+                            <li class="hover:underline">Insights</li>
+                            <li class="hover:underline">Carrier</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col w-[15rem]">
+                        <h1 class="font-semibold text-3xl">Contact Us</h1>
+
+                        <ul class="text-lg mt-5">
+                            <li>youremail@example.com</li>
+                            <li>76/A, Green road, NYC</li>
+                            <li class="hover:underline">Privacy Policy</li>
+                            <li>+63 *** *** ****</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-end text-center" >
+                <div>Copyright ©2025 All rights reserved | Created by: Jerreh Romer Salera</div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

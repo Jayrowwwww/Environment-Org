@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="./assets/_images/logo/Untitled design.png" type="image/x-icon">
+    <title>Fill Up</title>
+</head>
+<body class="font-[Montserrat]">
+    <div class="grid">
+        <header class="flex flex-col justify-center bg-[url(../assets/_images/hero2.png)] h-[30vh] bg-center text-white px-60">
+            <h1 class="font-semibold text-4xl">PROJECTS & ACHIEVEMENTS</h1>
+            <div class="flex mt-2">
+                <a href="../index.html" class="hover:underline">Home</a>
+                <p>> Membership</p>
+            </div>
+        </header>
+
+        <main class="h-screen">
+            <div class="flex flex-col justify-center">
+                <h1 class="font-semibold text-[30px]">Membership Sign Up</h1>
+                <p class="text-xl">Join our community! Please fill out the form below to be a member.</p>
+
+                <form action="#" class="mt-10">
+                    <div class="grid space-y-10">
+                        <div class="flex flex-col">
+                            <label for="Name" class="text-xl">Full Name</label>
+                            <input type="text" id="full-name" placeholder="Full Name" class="h-10 w-100 text-lg border-1 rounded-lg px-3" required>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="Phone-Number" class="text-xl">Contact</label>
+                            <input type="text" id="contact-num" placeholder="+63 123 456 7890" class="h-10 w-100 text-lg border-1 rounded-lg px-3" required>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="Message" class="text-xl">Message</label>
+                            <input type="text" row="3" id="message" placeholder="What is your *****" class="h-10 w-100 text-lg border-1 rounded-lg px-3 resize-x" required>
+                        </div>
+
+                        <div class="flex">
+                            <label for="Name" class="text-xl">Age:</label>
+                            <input type="text" id="age" class="border-b-1 w-10 mr-5" required>
+
+                            <label for="Name" class="text-xl">Sex:</label>
+                            <input type="text" id="sex" class="border-b-1 w-10" required>
+                        </div>
+                    </div>
+                </form>
+
+                <h2 class="text-2xl font-semibold text-gray-800 my-6">How Did You Hear About Us?</h2>
+                
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="source" class="block text-gray-700 font-medium mb-2">Please select how you heard about us:</label>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <input type="radio" id="social-media" class="mr-2" />
+                                <label for="social-media" class="text-gray-700">Social Media</label>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <input type="radio" id="friend-family" class="mr-2" />
+                                <label for="friend-family" class="text-gray-700">Friend or Family</label>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <input type="radio" id="advertisement" class="mr-2" />
+                                <label for="advertisement" class="text-gray-700">Advertisement</label>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <input type="radio" id="search-engine" class="mr-2" />
+                                <label for="search-engine" class="text-gray-700">Search Engine (Google, Bing, etc.)</label>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <input type="radio" id="other"  class="mr-2" />
+                                <label for="other" class="text-gray-700">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        Submit
+                        </button>
+                    </div>
+                </form>
+            </div>              
+        </main>
+    </div>
+</body>
+</html>
