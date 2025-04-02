@@ -21,8 +21,8 @@
             </div>
         </header>
 
-        <main class="h-screen">
-            <div class="flex flex-col justify-center">
+        <main class="h-[70vh] flex">
+            <div class="flex flex-col ml-10 my-auto">
                 <h1 class="font-semibold text-[30px]">Membership Sign Up</h1>
                 <p class="text-xl">Join our community! Please fill out the form below to be a member.</p>
 
@@ -30,71 +30,85 @@
                     <div class="grid space-y-10">
                         <div class="flex flex-col">
                             <label for="Name" class="text-xl">Full Name</label>
-                            <input type="text" id="full-name" placeholder="Full Name" class="h-10 w-100 text-lg border-1 rounded-lg px-3" required>
+                            <input type="text" id="full-name" placeholder="Full Name" class="h-10 w-100 text-lg border-1 rounded-lg px-3 outline-green-500" required>
                         </div>
 
                         <div class="flex flex-col">
                             <label for="Phone-Number" class="text-xl">Contact</label>
-                            <input type="text" id="contact-num" placeholder="+63 123 456 7890" class="h-10 w-100 text-lg border-1 rounded-lg px-3" required>
+                            <input type="text" id="contact-num" placeholder="+63 123 456 7890" class="h-10 w-100 text-lg border-1 rounded-lg px-3 outline-green-500" required>
                         </div>
 
                         <div class="flex flex-col">
                             <label for="Message" class="text-xl">Message</label>
-                            <input type="text" row="3" id="message" placeholder="What is your *****" class="h-10 w-100 text-lg border-1 rounded-lg px-3 resize-x" required>
+                            <textarea name="message" id="message" placeholder="Enter message" rows="4" class="border-1 rounded-lg p-2 text-kg max-h-[20rem] w-100 outline-green-500"></textarea>
                         </div>
 
                         <div class="flex">
                             <label for="Name" class="text-xl">Age:</label>
-                            <input type="text" id="age" class="border-b-1 w-10 mr-5" required>
+                            <input type="number" id="age" class="border-b-1 w-10 mr-5 outline-none" required>
 
                             <label for="Name" class="text-xl">Sex:</label>
-                            <input type="text" id="sex" class="border-b-1 w-10" required>
+                            <input type="text" id="sex" class="border-b-1 w-10 outline-none" required>
                         </div>
-                    </div>
-                </form>
 
-                <h2 class="text-2xl font-semibold text-gray-800 my-6">How Did You Hear About Us?</h2>
-                
-                <form action="#">
-                    <div class="mb-4">
-                        <label for="source" class="block text-gray-700 font-medium mb-2">Please select how you heard about us:</label>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <input type="radio" id="social-media" class="mr-2" />
-                                <label for="social-media" class="text-gray-700">Social Media</label>
-                            </div>
-                    
-                            <div class="flex items-center">
-                                <input type="radio" id="friend-family" class="mr-2" />
-                                <label for="friend-family" class="text-gray-700">Friend or Family</label>
-                            </div>
-                    
-                            <div class="flex items-center">
-                                <input type="radio" id="advertisement" class="mr-2" />
-                                <label for="advertisement" class="text-gray-700">Advertisement</label>
-                            </div>
-                    
-                            <div class="flex items-center">
-                                <input type="radio" id="search-engine" class="mr-2" />
-                                <label for="search-engine" class="text-gray-700">Search Engine (Google, Bing, etc.)</label>
-                            </div>
-                    
-                            <div class="flex items-center">
-                                <input type="radio" id="other"  class="mr-2" />
-                                <label for="other" class="text-gray-700">Other</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center">
-                        <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        Submit
-                        </button>
+                        <button class="w-50 h-10 rounded-full bg-green-600">Submit</button>
                     </div>
                 </form>
             </div>              
         </main>
+
+        <footer class="grid grid-rows-[1fr_100px] items-center justify-center h-[70vh] bg-linear-to-r from-green-500 via-green-400 to-green-500 text-white px-50">
+            <div class="flex">
+                <div class="flex flex-col pr-60">
+                    <h1 class="text-4xl font-semibold">Environmental Care</h1>
+                    <p class="mt-10 text-xl">"The automated process starts as soon as your clothes go into the machine."</p>
+                    <div class="flex gap-10 mt-10">
+                        <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="flex gap-30">
+                    <div class="flex flex-col w-[15rem]">
+                        <h1 class="font-semibold text-3xl">Our Solutions</h1>
+
+                        <ul class="text-lg mt-5">
+                            <li class="hover:underline">Design & Creatives</li>
+                            <li class="hover:underline">Telecommunication</li>
+                            <li class="hover:underline">Restaurant</li>
+                            <li class="hover:underline">Programming</li>
+                            <li class="hover:underline">Architecture</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col w-[15rem]">
+                        <h1 class="font-semibold text-3xl">Company</h1>
+
+                        <ul class="text-lg mt-5">
+                            <li class="hover:underline">About</li>
+                            <li class="hover:underline">Review</li>
+                            <li class="hover:underline">Insights</li>
+                            <li class="hover:underline">Carrier</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col w-[15rem]">
+                        <h1 class="font-semibold text-3xl">Contact Us</h1>
+
+                        <ul class="text-lg mt-5">
+                            <li>youremail@example.com</li>
+                            <li>76/A, Green road, NYC</li>
+                            <li class="hover:underline">Privacy Policy</li>
+                            <li>+63 *** *** ****</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-end text-center" >
+                <div>Copyright ©2025 All rights reserved | Created by: Jerreh Romer Salera</div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
