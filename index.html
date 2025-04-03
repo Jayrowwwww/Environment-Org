@@ -15,18 +15,18 @@
     <div class="grid box-border">
         <header class="fixed w-full bg-white shadow-md z-50">
             <!-- Desktop Nav -->
-            <div class="mx-auto px-6 lg:px-10 flex justify-between items-center h-20">
-                <div class="flex items-center gap-2">
+            <div class="mx-auto px-6 sm:px-10 flex justify-between items-center h-20">
+                <div class="flex items-center gap-2 cursor-pointer">
                     <img src="./assets/_images/logo/Untitled design.png" alt="Logo" class="h-10">
                     <h1 class="text-2xl font-semibold text-green-500">Environmental Care</h1>
                 </div>
     
-                <button id="menu-btn" class="lg:hidden text-green-800 text-3xl focus:outline-none">
+                <button id="menu-btn" class="sm:hidden text-green-800 text-3xl focus:outline-none">
                     <i class="fa-solid fa-bars"></i>
                 </button>
     
-                <nav id="nav-bar" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:gap-8">
-                    <ul class="flex flex-col lg:flex-row gap-5 lg:gap-8">
+                <nav id="nav-bar" class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:gap-8">
+                    <ul class="flex flex-col sm:flex-row gap-5 sm:gap-8">
                         <li><a href="#home" class="hover:text-green-500">Home</a></li>
                         <li><a href="#about" class="hover:text-green-500">About</a></li>
                         <li><a href="#join" class="hover:text-green-500">Want to Join?</a></li>
@@ -43,7 +43,7 @@
             </div>
     
             <!-- Mobile Nav -->
-            <nav id="mobile-menu" class="hidden lg:hidden flex flex-col bg-white shadow-md p-5 absolute top-20 left-0 w-full">
+            <nav id="mobile-menu" class="hidden sm:hidden flex flex-col bg-white shadow-sm p-5 absolute top-20 left-0 w-full">
                 <ul class="flex flex-col gap-5">
                     <li><a href="#home" class="hover:text-green-500">Home</a></li>
                     <li><a href="#about" class="hover:text-green-500">About</a></li>
@@ -61,67 +61,67 @@
         </header>
 
         <main class="box-border">
-            <section class="flex h-screen bg-left bg-[url(./assets/_images/bg/photo-1459262838948-3e2de6c1ec80.jfif)]" id="home">
-                <div class="flex flex-col pt-80 ml-80 text-white">
-                    <h1 class="text-[120px] font-semibold">Environment</h1>
-                    <p class="text-3xl">Provide us a green healthy life <br> we need to protect</p>
+            <section class="grid h-screen bg-[url(./assets/_images/bg/photo-1459262838948-3e2de6c1ec80.jfif)] bg-center sm:bg-left" id="home">
+                <div class="flex flex-col items-center justify-center pl-5 sm:ml- text-white">
+                    <h1 class="text-[60px] font-semibold sm:text-[100px]">Environment</h1>
+                    <p class="text-xl text-center sm:text-left sm:text-3xl">Provide us a green healthy life we need to protect.</p>
 
-                    <div class="pt-10">
+                    <div class="mt-10 sm:mt-20">
                         <a href="./pages/membership.html" class="text-black">
-                            <button class="bg-white w-50 h-14 rounded-3xl hover:bg-white/20 hover:backdrop-blur-md hover:border-2 hover:border-white hover:text-white">Join Us Now</button>
+                            <button class="bg-white w-50 h-14 rounded-3xl active:bg-transparent active:border-2 active:border-white active:text-white sm:hover:bg-white/20 sm:hover:backdrop-blur-md sm:hover:border-2 sm:hover:border-white sm:hover:text-white">Join Us Now</button>
                         </a>
                     </div>
                 </div>
             </section>
 
-            <section class="h-screen flex justify-center bg-[url(./assets/_images/bg/visit_bg.png)] bg-green-100 bg-no-repeat bg-contain bg-left" id="about">
-               <div class="flex flex-col px-106 ml-113 mt-40">
-                    <h3 class="text-4xl pb-5 text-green-600">Our Mission</h3>
-                    <h2 class="text-[50px] pb-5 text-green-900/90 font-semibold">Our main goal is to protect our Environment and Animals</h2>
-                    <p class="text-xl pb-7 text-green-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repellendus voluptatibus! Obcaecati voluptatum, et itaque eligendi blanditiis magni quia a, sit voluptate facere dolore? Nesciunt id alias quia ipsum est.</p>
-                    <h2 class="font-semibold text-xl pb-2 text-green-900/90 mt-10">CEO, Consultant</h2>
-                    <h1 class="text-4xl text-green-900/90">Jerreh Romer Salera</h1>
+            <section class="h-screen grid justify-center bg-[url(./assets/_images/bg/home-blog2.png)] sm:bg-[url(./assets/_images/bg/visit_bg.png)] bg-green-100 bg-no-repeat bg-cover sm:bg-contain bg-left" id="about">
+               <div class="flex flex-col bg-green-100 my-auto px-2 py-5 h-120 sm:bg-transparent sm:px-106 sm:ml-113 sm:mt-40">
+                    <h3 class="sm:text-4xl text-2xl pb-5 text-green-600">Our Mission</h3>
+                    <h2 class="sm:text-[50px] text-[30px] mb-5 sm:pr-0 text-green-900/90 font-semibold">Our main goal is to protect our Environment and Animals</h2>
+                    <p class="sm:text-xl text-lg text-green-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repellendus voluptatibus! Obcaecati voluptatum, et itaque eligendi blanditiis magni quia a, sit voluptate facere dolore? Nesciunt id alias quia ipsum est.</p>
+                    <h2 class="font-semibold sm:text-xl pb-2 text-green-900/90 mt-10">CEO, Consultant</h2>
+                    <h1 class="sm:text-4xl text-3xl text-green-600/90">Jerreh Romer Salera</h1>
                </div>
             </section>
 
-            <section class="flex justify-between px-70 items-center h-[65vh]">
-                <div class="flex justify-center items-end bg-[url(./assets/_images/services1.jpg)] bg-no-repeat bg-cover  h-100 w-100">    
-                    <h1 class="flex justify-center items-center bg-white h-10 w-60 text-xl hover:scale-105 hover:bg-linear-to-r hover:from-green-500 hover:to-blue-500 hover:text-white hover:underline transition-transform duration-200">Clean Water</h1>
+            <section class="flex flex-col gap-5 justify-center items-center sm:flex-row sm:justify-between sm:px-70 h-screen sm:h-[65vh]">
+                <div class="flex justify-center items-end bg-[url(./assets/_images/services1.jpg)] bg-no-repeat bg-cover h-70 w-70 sm:h-100 sm:w-100">    
+                    <h1 class="flex justify-center items-center bg-white h-10 w-60 text-xl sm:hover:scale-105 hover:bg-linear-to-r sm:hover:from-green-500 sm:hover:to-blue-500 sm:hover:text-white sm:hover:underline sm:hover:translate-y-[-10px] transition-transform duration-200">Clean Water</h1>
                 </div>
 
-                <div class="flex justify-center items-end bg-[url(./assets/_images/services2.png)] bg-no-repeat bg-cover  h-100 w-100">    
-                    <h1 class="flex justify-center items-center bg-white h-10 w-60 text-xl hover:scale-105 hover:bg-linear-to-r hover:from-green-500 hover:to-blue-500 hover:text-white hover:underline transition-transform duration-200">Renewable Energy</h1>
+                <div class="flex justify-center items-end bg-[url(./assets/_images/services2.png)] bg-no-repeat bg-cover h-70 w-70 sm:h-100 sm:w-100">    
+                    <h1 class="flex justify-center items-center bg-white h-10 w-60 text-xl sm:hover:scale-105 hover:bg-linear-to-r sm:hover:from-green-500 sm:hover:to-blue-500 sm:hover:text-white sm:hover:underline sm:hover:translate-y-[-10px] transition-transform duration-200">Renewable Energy</h1>
                 </div>
 
-                <div class="flex justify-center items-end bg-[url(./assets/_images/services3.png)] bg-no-repeat bg-cover  h-100 w-100">    
-                    <h1 class="flex justify-center items-center bg-white h-10 w-60 text-xl hover:scale-105 hover:bg-linear-to-r hover:from-green-500 hover:to-blue-500 hover:text-white hover:underline transition-transform duration-200">Protect Animals</h1>
+                <div class="flex justify-center items-end bg-[url(./assets/_images/services3.png)] bg-no-repeat bg-cover h-70 w-70 sm:h-100 sm:w-100">    
+                    <h1 class="flex justify-center items-center bg-white h-10 w-60 text-xl sm:hover:scale-105 hover:bg-linear-to-r sm:hover:from-green-500 sm:hover:to-blue-500 sm:hover:text-white sm:hover:underline sm:hover:translate-y-[-10px] transition-transform duration-200">Protect Animals</h1>
                 </div>
             </section>
 
-            <section class="flex justify-center items-center h-screen" id="join">
-                <div class="flex flex-col px-50 ml-20">
-                    <h3 class="font-semibold text-3xl text-green-600">WHY SHOULD YOU JOIN US?</h3>
-                    <h1 class="text-[60px] font-semibold mt-5">A lot of animals need protection</h1>
-                    <p class="text-xl/9 mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui eos, recusandae atque aut ad molestias, aliquid nisi reprehenderit voluptate animi dolores fugit amet sint laborum. Dignissimos labore eos amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos provident, tempore dolore adipisci assumenda error excepturi dignissimos doloremque, illum, quas aut est sapiente quisquam modi facere mollitia iste? Dolore!</p>
-                    <button class="h-15 w-60 mt-10 bg-0 border-2 border-green-600 rounded-3xl hover:bg-green-600 hover:text-white">Join Us Now</button>
+            <section class="flex justify-center items-center h-[70vh] sm:h-screen" id="join">
+                <div class="flex flex-col justify-center bg-green-100 h-120 px-5 sm:my-auto sm:h-screen sm:bg-transparent sm:px-50 sm:ml-20">
+                    <h3 class="font-semibold text-[15px] sm:text-3xl text-green-600">WHY SHOULD YOU JOIN US?</h3>
+                    <h1 class="text-[20px] sm:text-[60px] font-semibold mt-5">A LOT OF ANIMALS NEED PROTECTION</h1>
+                    <p class="sm:text-xl/9 mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui eos, recusandae atque aut ad molestias, aliquid nisi reprehenderit voluptate animi dolores fugit amet sint laborum. Dignissimos labore eos amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos provident, tempore dolore adipisci assumenda error excepturi dignissimos doloremque, illum, quas aut est sapiente quisquam modi facere mollitia iste? Dolore!</p>
+                    <a href="./pages/membership.html"><button class="h-12 w-40 sm:h-15 sm:w-60 mt-10 bg-0 border-2 border-green-600 rounded-3xl sm:hover:bg-green-600 sm:hover:text-white">Join Us Now</button></a>
                 </div>
 
-                <img src="./assets/_images/safe_in.png" alt="" class="h-[50rem]">
+                <img src="./assets/_images/safe_in.png" alt="" class="h-[50rem] hidden sm:inline">
             </section>
         </main>
 
-        <footer class="grid grid-rows-[1fr_100px] items-center justify-center h-[70vh] bg-linear-to-r from-green-500 via-green-400 to-green-500 text-white px-50">
-            <div class="flex">
-                <div class="flex flex-col pr-60">
+        <footer class="grid grid-rows-[1fr_100px] items-center sm:justify-center h-[120vh] sm:h-[70vh] pl-10 sm:pl-0 bg-linear-to-r from-green-500 via-green-400 to-green-500 text-white sm:px-50">
+            <div class="flex flex-col sm:flex-row">
+                <div class="flex flex-col mb-10 sm:mb-0 sm:px-30">
                     <h1 class="text-4xl font-semibold">Environmental Care</h1>
-                    <p class="mt-10 text-xl">"The automated process starts as soon as your clothes go into the machine."</p>
-                    <div class="flex gap-10 mt-10">
+                    <p class="mt-5 sm:mt-10 text-xl pr-30">"The automated process starts as soon as your clothes go into the machine."</p>
+                    <div class="flex gap-10 mt-5 sm:mt-10">
                         <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-                <div class="flex gap-30">
+                <div class="flex flex-col sm:flex-row gap-10 sm:gap-30">
                     <div class="flex flex-col w-[15rem]">
                         <h1 class="font-semibold text-3xl">Our Solutions</h1>
 
@@ -134,7 +134,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex flex-col w-[15rem]">
+                    <div class="flex flex-col w-[10rem]">
                         <h1 class="font-semibold text-3xl">Company</h1>
 
                         <ul class="text-lg mt-5">
@@ -145,7 +145,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex flex-col w-[15rem]">
+                    <div class="flex flex-col w-[12rem]">
                         <h1 class="font-semibold text-3xl">Contact Us</h1>
 
                         <ul class="text-lg mt-5">
@@ -158,8 +158,8 @@
                 </div>
             </div>
 
-            <div class="flex justify-center items-end text-center" >
-                <div>Copyright ©2025 All rights reserved | Created by: Jerreh Romer Salera</div>
+            <div class="flex sm:justify-center sm:items-center items-end text-center" >
+                <h class="text-center">Copyright ©2025 All rights reserved | Created by: Jerreh Romer Salera</h1>
             </div>
         </footer>
     </div>
