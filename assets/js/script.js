@@ -28,11 +28,11 @@ const donorName = new URLSearchParams(window.location.search).get('name');
 const donorEmail = new URLSearchParams(window.location.search).get('email');
 
     if (donationAmount) {
-    document.getElementById('donation-amount').textContent = donationAmount;
+        document.getElementById('donation-amount').textContent = donationAmount;
     }
     if (donorName) {
-    document.getElementById('donor-name').textContent = donorName;
+        document.getElementById('donor-name').textContent = donorName;
     }
     if (donorEmail) {
-    document.getElementById('donor-email').textContent = donorEmail;
+        document.getElementById('donor-email').textContent = donorEmail;
     }
