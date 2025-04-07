@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="./assets/_images/logo/Untitled design.png" type="image/x-icon">
+    <title>Donation</title>
+</head>
+<body class="bg-gray-50 text-gray-800 text-[Montserrat]">
+    <header class="bg-[url(../assets/_images/hero2.png)] text-white py-20">
+        <div class="inline">
+            <a href="../index.html" class="text-left text-xl ml-3 text-red-500 sm:text-white sm:ml-10">←Back</a>
+        </div>
+        <div class="flex flex-col text-center">
+            <h1 class="text-4xl font-bold">Support Our Cause</h1>
+            <p class="mt-4 text-xl">Your generous donations help us make a difference.</p>
+        </div>
+    </header>
+
+  <!-- Donation Form Section -->
+    <section class="max-w-4xl h-[80vh] mx-auto px-4 py-12">
+        <div class="bg-green-100 shadow-lg rounded-lg p-8">
+            <h2 class="text-2xl font-semibold text-center text-gray-700">Make a Donation</h2>
+            <p class="text-center text-gray-600 mt-4">Choose an amount to donate or enter your own custom amount.</p>
+
+            <!-- Donation Form -->
+            <form action="./thankyou.html" method="GET" class="mt-8 space-y-6">
+                <div class="flex justify-between">
+                    <label for="donation-amount" class="text-lg">Donation Amount</label>
+                        <select name="donation-amount" id="donation-amount" class="border-1 w-32 p-2 rounded-md border-gray-300">
+                            <option value="10">$10</option>
+                            <option value="20">$20</option>
+                            <option value="50">$50</option>
+                            <option value="100">$100</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                </div>
+
+                <!-- Custom Amount Section (conditionally visible) -->
+                <div id="custom-amount-section" class="hidden mt-4">
+                    <label for="custom-amount" class="block text-lg">Enter Custom Amount</label>
+                    <input type="number" name="custom-amount" id="custom-amount" placeholder="Enter amount" class="border-1 w-full p-2 mt-2 rounded-md border-gray-300" min="1">
+                </div>
+
+                <!-- Name and Email -->
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-lg">Full Name</label>
+                        <input type="text" name="name" id="name" required class="border-1 w-full p-2 mt-2 rounded-md border-gray-300" placeholder="Your full name">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-lg">Email Address</label>
+                        <input type="email" name="email" id="email" required class="border-1 w-full p-2 mt-2 rounded-md border-gray-300" placeholder="Your email address">
+                    </div>
+                </div>
+
+                <!-- Payment Method Section -->
+                <div>
+                    <label for="payment-method" class="block text-lg">Payment Method</label>
+                        <select name="payment-method" id="payment-method" class="border-1 w-full p-2 mt-2 rounded-md border-gray-300">
+                            <option value="credit-card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="gcash">GCash</option>
+                            <option value="paymaya">PayMaya</option>
+                        </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="mt-8 text-center">
+                    <button class="px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded-md hover:bg-blue-700 transition">
+                        Donate Now
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+  <!-- Footer Section -->
+    <footer class="hidden sm:grid grid-rows-[1fr_100px] items-center sm:justify-center h-[120vh] sm:h-[70vh] pl-10 sm:pl-0 bg-linear-to-r from-green-500 via-green-400 to-green-500 text-white sm:px-50">
+        <div class="flex flex-col sm:flex-row">
+            <div class="flex flex-col mb-10 sm:mb-0 sm:px-30">
+                <h1 class="text-4xl font-semibold">Environmental Care</h1>
+                <p class="mt-5 sm:mt-10 text-xl pr-30">"The automated process starts as soon as your clothes go into the machine."</p>
+                <div class="flex gap-10 mt-5 sm:mt-10">
+                    <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="grid items-center justify-center bg-white/50 text-xl w-10 h-10 rounded-full hover:bg-gray-500/50"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-10 sm:gap-30">
+                <div class="flex flex-col w-[15rem]">
+                    <h1 class="font-semibold text-3xl">Our Solutions</h1>
+
+                    <ul class="text-lg mt-5">
+                        <li class="hover:underline">Design & Creatives</li>
+                        <li class="hover:underline">Telecommunication</li>
+                        <li class="hover:underline">Restaurant</li>
+                        <li class="hover:underline">Programming</li>
+                        <li class="hover:underline">Architecture</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col w-[10rem]">
+                    <h1 class="font-semibold text-3xl">Company</h1>
+
+                    <ul class="text-lg mt-5">
+                        <li class="hover:underline">About</li>
+                        <li class="hover:underline">Review</li>
+                        <li class="hover:underline">Insights</li>
+                        <li class="hover:underline">Carrier</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col w-[12rem]">
+                    <h1 class="font-semibold text-3xl">Contact Us</h1>
+
+                    <ul class="text-lg mt-5">
+                        <li>youremail@example.com</li>
+                        <li>76/A, Green road, Cordoba</li>
+                        <li class="hover:underline">Privacy Policy</li>
+                        <li>+63 *** *** ****</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex sm:justify-center sm:items-center items-end text-center sm:text-center" >
+            <h class="text-center">Copyright ©2025 All rights reserved | Created by: Jerreh Romer Salera</h1>
+        </div>
+    </footer>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

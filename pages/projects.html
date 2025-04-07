@@ -9,53 +9,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="shortcut icon" href="./assets/_images/logo/Untitled design.png" type="image/x-icon">
+    <style>
+        #slider::-webkit-scrollbar{
+            visibility: hidden;
+        }
+    </style>
     <title>Projects</title>
 </head>
 <body class="font-[Montserrat] box-border">
     <div class="grid">
-            <header class="flex flex-col justify-center bg-gray-600 sm:bg-[url(../assets/_images/hero2.png)] h-[20vh] sm:h-[30vh] sm:bg-center text-white sm:px-60">
-                <h1 class="font-semibold text-2xl sm:text-4xl">PROJECTS & ACHIEVEMENTS</h1>
-                <div class="flex mt-2">
-                    <a href="../index.html" class="text-red-500 sm:hover:underline sm:text-white">Home</a>
-                    <p class="hidden sm:inline">> Projects</p>
+        <header class="flex flex-col justify-center bg-[url(../assets/_images/hero2.png)] h-[30vh] bg-center text-white px-5 sm:px-60">
+            <h1 class="font-semibold text-4xl">PROJETCS & ACHIEVEMENTS</h1>
+            <div class="flex mt-2">
+                <a href="../index.html" class="hover:underline text-red-500 sm:text-white">Home</a>
+                <p class="hidden sm:inline">> Projects</p>
+            </div>
+        </header>
+        <main>    
+            <section class="flex flex-col py-10 sm:py-0 sm:items-center h-[80vh] sm:h-[70vh] bg-green-100 sm:p-5">
+                <div class="grid">
+                    <h1 class="text-2xl text-center sm:text-[60px] text-green-600">Every day 6,000 beavers perished</h1>
+                    <p class="sm:text-xl text-center px-3 sm:px-0 mt-5">Interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
                 </div>
-            </header>
-        <main class="py-10 sm:py-0 sm:items-center h-[80vh] sm:h-[70vh] bg-green-100 sm:p-5">    
-            <section class="flex flex-col">
-                <h1 class="text-2xl text-center sm:text-[60px] text-green-600">Every day 6,000 beavers perished</h1>
-                <p class="sm:text-xl text-center px-3 sm:px-0 mt-5">Interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                <div class="relative sm:static grid ml-12 sm:grid-cols-3 sm:gap-x-10 mt-10">
-                    <div class="absolute sm:static bg-white flex flex-col w-90 h-110 border-1 sm:border-none sm:w-100 sm:h-100 sm:bg-transparent sm:hover:scale-[1.02] transition-transform duration-200 ease-in">
+                <div class="grid mx-auto w-90 h-110 sm:w-[70%] sm:px-10 grid-cols-3 gap-100 sm:gap-x-10 mt-10 overflow-y-hidden sm:overflow-x-visible scroll-smooth scroll-snap-x scroll-snap-mandatory" id="slider">
+                    <div class="bg-white flex flex-col w-90 h-110 sm:w-100 sm:h-100 sm:bg-transparent sm:hover:scale-[1.02] transition-transform duration-200 ease-in snap-start" id="box-1">
                         <img src="../assets/_images/case1.png" alt="" class="">
                         <h3 class="text-xl mt-2 font-[500]">Wildlife Rescue</h3>
                         <p class="mt-2">Interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus rutrum.</p>
                         <p class="mt-4 font-[500] text-blue-500 sm:hover:underline">47,589 Rescued</p>
                     </div>
                     
-                    <div class="absolute sm:static bg-white flex flex-col w-90 h-110 border-1 sm:border-none sm:w-100 sm:h-100 sm:bg-transparent sm:hover:scale-[1.02] transition-transform duration-200 ease-in">
+                    <div class="bg-white flex flex-col w-90 h-110 sm:w-100 sm:h-100 sm:bg-transparent sm:hover:scale-[1.02] transition-transform duration-200 ease-in snap-start" id="box-2">
                         <img src="../assets/_images/case2.png" alt="">
                         <h3 class="text-xl mt-2 font-[500]">Green Life Project</h3>
                         <p class="mt-2">Interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus rutrum.</p>
                         <p class="mt-4 font-[500] text-blue-500 sm:hover:underline">589 Built Green House</p>
                     </div>
     
-                    <div class="absolute sm:static bg-white flex flex-col w-90 h-110 border-1 sm:border-none sm:w-100 sm:h-100 sm:bg-transparent sm:hover:scale-[1.02] transition-transform duration-200 ease-in">
+                    <div class="bg-white flex flex-col w-90 h-110 sm:w-100 sm:h-100 sm:bg-transparent sm:hover:scale-[1.02] transition-transform duration-200 ease-in snap-start" id="box-3">
                         <img src="../assets/_images/case3.png" alt="">
                         <h3 class="text-xl mt-2 font-[500]">Tree Planting</h3>
                         <p class="mt-2">Interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus rutrum.</p>
                         <p class="mt-4 font-[500] text-blue-500 sm:hover:underline">470,589 Tree Planted</p>
                     </div>
                 </div>
-            </section>
 
-            <nav class="inline">
-                <a href="" class="inline bg-white h-10 w-10"></a>
-                <a href="" class="bg-white h-10 w-10"></a>
-                <a href="" class="bg-white h-10 w-10"></a>
-            </nav>
+                <nav class="flex gap-2 mx-auto mt-2 sm:hidden">
+                    <a href="#box-1" class="bg-gray-300/40 h-4 w-4 rounded-full active:bg-white"></a>
+                    <a href="#box-2" class="bg-gray-300/40 h-4 w-4 rounded-full active:bg-white"></a>
+                    <a href="#box-3" class="bg-gray-300/40 h-4 w-4 rounded-full active:bg-white"></a>
+                </nav>
+            </section>
         </main>
 
-        <footer class="grid grid-rows-[1fr_100px] items-center sm:justify-center h-[120vh] sm:h-[70vh] pl-10 sm:pl-0 bg-linear-to-r from-green-500 via-green-400 to-green-500 text-white sm:px-50">
+        <footer class="hidden sm:grid grid-rows-[1fr_100px] items-center sm:justify-center h-[120vh] sm:h-[70vh] pl-10 sm:pl-0 bg-linear-to-r from-green-500 via-green-400 to-green-500 text-white sm:px-50">
             <div class="flex flex-col sm:flex-row">
                 <div class="flex flex-col mb-10 sm:mb-0 sm:px-30">
                     <h1 class="text-4xl font-semibold">Environmental Care</h1>
